@@ -1,0 +1,112 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1% 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main {
+  background-color: purple;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.projetos {
+  display: flex;
+  /* flex-wrap: nowrap; */
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  margin: 10px;
+  padding: 20px;
+  /* width: 60%; */
+  min-width: 300px;
+}
+
+.card p {
+  font-weight: bold;
+  justify-content: start;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2% 0;
+}
+
+
+@media only screen and (max-width:480px){ /* celular */
+  main {
+    background-color: red;
+  }
+
+  main h1 {
+    font-size: larger;
+  }
+  .projetos {
+    flex-direction: column;
+  }
+
+  .card {
+    font-size: 14px;
+  }
+
+  .card img {
+    max-width: 300px;
+  }
+
+}
+
+/* tablet */
+@media only screen and (max-width: 900px){
+  main {
+    background-color: blue;
+  }
+
+  .projetos {
+    flex-direction: column;
+  }
+}
+
+/* 
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: green;
+  }
+} */
+
