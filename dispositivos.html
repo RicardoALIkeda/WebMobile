@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!--
+    Ricardo Andre Lopes Ikeda
+    TIA 32158378
+    Pedro Henrique Ikeda
+    TIA 32016344
+    -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="dispositivos.js"></script>
+  </head>
+<body>
+    <header>
+        <h1>Lab GamesVR</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="dispositivos.html">Dispositivos</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="grupo.html">Grupo</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main class="vitrine">
+        <article class="produto">
+            <img src="img/breadboard.jpg" alt="Produto 1">
+            <h2>Breadboard</h2>
+            <div class="qty-info">
+                <p class="quantidade" id="qty-breadboard">3</p>
+                <p class="quantidade">Disponivel</p>
+            </div>
+            <button  id='btn-breadboard' onclick="reservar('breadboard')">Reservar</button>
+        </article>
+
+        <article class="produto">
+            <img src="img/resistor.jpg" alt="Produto 1">
+            <h2>Resistor</h2>
+            <div class="qty-info">
+                <p class="quantidade" id="qty-resistor">200</p>
+                <p class="quantidade">Disponivel</p>
+            </div>
+            <button id='btn-resistor' onclick="reservar('resistor')">Reservar</button>
+        </article>
+
+        <article class="produto">
+            <img src="img/arduino.jpg" alt="Produto 2">
+            <!-- <div class="text"> -->
+            <h2>Arduino</h2>
+            <div class="qty-info">
+                <p class="quantidade" id="qty-arduino">4</p>
+                <p class="quantidade">Disponivel</p>
+            </div>
+            <button id='btn-arduino' onclick="reservar('arduino')">Reservar</button>
+            <!-- </div> -->
+        </article>
+
+        <!-- <article class="produto">
+            <img src="breadboard.jpg" alt="Produto 1">
+            <div class="text">
+                <h2>breadboard</h2>
+                <p class="quantidade">2 Disponivel</p>
+                <button>Reservar</button>
+            </div>
+        </article> -->
+
+        
+
+        <article class="produto">
+            <img src="img/jumper.jpg" alt="Produto 1">
+            <h2>Jumper</h2>
+            <div class="qty-info">
+                <p class="quantidade" id="qty-jumper">30</p>
+                <p class="quantidade">Disponivel</p>
+            </div>
+            <button id="btn-jumper" onclick="reservar('jumper')">Reservar</button>
+        </article>
+
+        <article class="produto">
+            <img src="img/mpu6050.webp" alt="Produto 1">
+            <h2>MPU-6050</h2>
+            <div class="qty-info">
+                <p class="quantidade" id="qty-mpu">4</p>
+                <p class="quantidade">Disponivel</p>
+            </div>
+            <button id="btn-mpu" onclick="reservar('mpu')">Reservar</button>
+        </article>
+
+        <article class="produto">
+            <img src="img/hc06.jpg" alt="Produto 1">
+            <h2>HC-06</h2>
+            <div class="qty-info">
+                <p class="quantidade" id="qty-hc">5</p>
+                <p class="quantidade">Disponivel</p>
+            </div>
+            <button id="btn-hc" onclick="reservar('hc')">Reservar</button>
+        </article>
+
+        <article class="produto">
+            <img src="img/nrf24l01.jpg" alt="Produto 1">
+            <h2>NRF24L01</h2>
+            <div class="qty-info">
+                <p class="quantidade" id="qty-nrf">2</p>
+                <p class="quantidade">Disponivel</p>
+            </div>
+            <button id="btn-nrf" onclick="reservar('nrf')">Reservar</button>
+        </article>
+
+        <article class="produto">
+            <img src="img/potenciometro.webp" alt="Produto 1">
+            <h2>Potenciômetro</h2>
+            <div class="qty-info">
+                <p class="quantidade" id="qty-potenciometro">4</p>
+                <p class="quantidade">Disponivel</p>
+            </div>
+            <button id="btn-potenciometro" onclick="reservar('potenciometro')">Reservar</button>
+        </article>
+
+        <article class="produto">
+            <img src="img/button.jpg" alt="Produto 1">
+            <h2>Botão</h2>
+            <div class="qty-info">
+                <p class="quantidade" id="qty-botao">4</p>
+                <p class="quantidade">Disponivel</p>
+            </div>
+            <button id="btn-botao" onclick="reservar('botao')">Reservar</button>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>Ikeda &copy; 2023</p>
+    </footer>
+</body>
+</html>

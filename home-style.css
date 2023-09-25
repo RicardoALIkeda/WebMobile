@@ -65,3 +65,16 @@ body {
     text-align: center;
     padding: 1vh 0;
   }
+
+
+  @media only screen and (max-width:480px){ /* celular */
+    nav ul{
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+  
+    nav ul li {
+      margin: auto;
+    }
+}

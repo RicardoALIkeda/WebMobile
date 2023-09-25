@@ -12,9 +12,16 @@ header {
   padding: 1% 0;
 }
 
+nav {
+  /* display: flex; */
+  justify-content: center;
+  /* flex-wrap: nowrap; */
+}
+
 nav ul {
   list-style: none;
   padding: 0;
+  
 }
 
 nav ul li {
@@ -28,7 +35,7 @@ nav ul li a {
 }
 
 main {
-  background-color: purple;
+  background-color: yellow;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -47,7 +54,11 @@ main {
   margin: 10px;
   padding: 20px;
   /* width: 60%; */
-  min-width: 300px;
+  /* min-width: 300px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .card p {
@@ -56,11 +67,16 @@ main {
 }
 
 .card img {
-  max-width: 100%;
+  max-width: 60%;
+  width: 60vw;
   height: auto;
   border-radius: 16px;
 }
 
+.card a {
+  margin-top: 5%;
+  font-weight: bold;
+}
 
 footer {
   background-color: #333;
@@ -71,6 +87,16 @@ footer {
 
 
 @media only screen and (max-width:480px){ /* celular */
+  nav ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: auto;
+  }
+
   main {
     background-color: red;
   }
@@ -84,22 +110,35 @@ footer {
 
   .card {
     font-size: 14px;
+    /* min-width: 5vw; */
+    min-width: 200px;
+
+  }
+
+  .card p {
+    font-size: 0.9em;
   }
 
   .card img {
-    max-width: 300px;
+    max-width: 350px;
+    min-width: 60%;
   }
 
 }
 
 /* tablet */
-@media only screen and (max-width: 900px){
+@media only screen and (min-width: 481px) and (max-width: 900px){
   main {
     background-color: blue;
   }
 
   .projetos {
     flex-direction: column;
+  }
+
+  .card img {
+    max-width: 300px;
+    min-width: 60%;
   }
 }
 
