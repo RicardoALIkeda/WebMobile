@@ -1,0 +1,151 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1% 0;
+}
+
+nav {
+  /* display: flex; */
+  justify-content: center;
+  /* flex-wrap: nowrap; */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main {
+  background-color: yellow;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.projetos {
+  display: flex;
+  /* flex-wrap: nowrap; */
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  margin: 10px;
+  padding: 20px;
+  /* width: 60%; */
+  /* min-width: 300px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card p {
+  font-weight: bold;
+  justify-content: start;
+}
+
+.card img {
+  max-width: 60%;
+  width: 60vw;
+  height: auto;
+  border-radius: 16px;
+}
+
+.card a {
+  margin-top: 5%;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2% 0;
+}
+
+
+@media only screen and (max-width:480px){ /* celular */
+  nav ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: auto;
+  }
+
+  main {
+    background-color: red;
+  }
+
+  main h1 {
+    font-size: larger;
+  }
+  .projetos {
+    flex-direction: column;
+  }
+
+  .card {
+    font-size: 14px;
+    /* min-width: 5vw; */
+    min-width: 200px;
+
+  }
+
+  .card p {
+    font-size: 0.9em;
+  }
+
+  .card img {
+    max-width: 350px;
+    min-width: 60%;
+  }
+
+}
+
+/* tablet */
+@media only screen and (min-width: 481px) and (max-width: 900px){
+  main {
+    background-color: blue;
+  }
+
+  .projetos {
+    flex-direction: column;
+  }
+
+  .card img {
+    max-width: 300px;
+    min-width: 60%;
+  }
+}
+
+/* 
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: green;
+  }
+} */
+
