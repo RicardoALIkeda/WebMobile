@@ -35,7 +35,6 @@ nav ul li a {
 }
 
 main {
-  background-color: yellow;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -76,6 +75,8 @@ main {
 .card a {
   margin-top: 5%;
   font-weight: bold;
+  text-decoration: none;
+  color: black;
 }
 
 footer {
@@ -95,10 +96,6 @@ footer {
 
   nav ul li {
     margin: auto;
-  }
-
-  main {
-    background-color: red;
   }
 
   main h1 {
@@ -128,10 +125,6 @@ footer {
 
 /* tablet */
 @media only screen and (min-width: 481px) and (max-width: 900px){
-  main {
-    background-color: blue;
-  }
-
   .projetos {
     flex-direction: column;
   }
